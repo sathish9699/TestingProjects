@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="192241" started-at="2020-06-19T23:11:33 IST" finished-at="2020-06-19T23:14:45 IST">
+  <suite name="Suite" duration-ms="189464" started-at="2020-06-20T14:49:26 IST" finished-at="2020-06-20T14:52:36 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="192241" started-at="2020-06-19T23:11:33 IST" finished-at="2020-06-19T23:14:45 IST">
+    <test name="Test" duration-ms="189464" started-at="2020-06-20T14:49:26 IST" finished-at="2020-06-20T14:52:36 IST">
       <class name="Testcase1.testcase">
-        <test-method status="PASS" signature="launchBrowserUrl()[pri:0, instance:Testcase1.testcase@53f65459]" name="launchBrowserUrl" is-config="true" duration-ms="45123" started-at="2020-06-19T23:11:33 IST" finished-at="2020-06-19T23:12:18 IST">
+        <test-method status="PASS" signature="launchBrowserUrl()[pri:0, instance:Testcase1.testcase@53f65459]" name="launchBrowserUrl" is-config="true" duration-ms="65269" started-at="2020-06-20T14:49:26 IST" finished-at="2020-06-20T14:50:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowserUrl -->
-        <test-method status="PASS" signature="Testcase1()[pri:0, instance:Testcase1.testcase@53f65459]" name="Testcase1" duration-ms="55850" started-at="2020-06-19T23:12:18 IST" finished-at="2020-06-19T23:13:14 IST">
+        <test-method status="PASS" signature="Testcase1()[pri:0, instance:Testcase1.testcase@53f65459]" name="Testcase1" duration-ms="53929" started-at="2020-06-20T14:50:32 IST" finished-at="2020-06-20T14:51:25 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Testcase1 -->
-        <test-method status="PASS" signature="Testcase2()[pri:0, instance:Testcase1.testcase@53f65459]" name="Testcase2" duration-ms="53672" started-at="2020-06-19T23:13:14 IST" finished-at="2020-06-19T23:14:08 IST">
+        <test-method status="PASS" signature="Testcase2()[pri:0, instance:Testcase1.testcase@53f65459]" name="Testcase2" duration-ms="40550" started-at="2020-06-20T14:51:25 IST" finished-at="2020-06-20T14:52:06 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Testcase2 -->
-        <test-method status="PASS" signature="Testcase3()[pri:0, instance:Testcase1.testcase@53f65459]" name="Testcase3" duration-ms="33037" started-at="2020-06-19T23:14:08 IST" finished-at="2020-06-19T23:14:41 IST">
+        <test-method status="PASS" signature="Testcase3()[pri:0, instance:Testcase1.testcase@53f65459]" name="Testcase3" duration-ms="28304" started-at="2020-06-20T14:52:06 IST" finished-at="2020-06-20T14:52:34 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Testcase3 -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:Testcase1.testcase@53f65459]" name="quitBrowser" is-config="true" duration-ms="4444" started-at="2020-06-19T23:14:41 IST" finished-at="2020-06-19T23:14:45 IST">
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:Testcase1.testcase@53f65459]" name="quitBrowser" is-config="true" duration-ms="1254" started-at="2020-06-20T14:52:34 IST" finished-at="2020-06-20T14:52:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->

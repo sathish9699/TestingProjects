@@ -31,6 +31,11 @@ public class testcase extends POM1 {
 	ExtentTest test;
 	
 	@BeforeTest
+	/*
+	 * To generate extent reports 
+	 * To launch the browser 
+	 * To navigate to the url
+	 */
 	public void launchBrowserUrl() throws FileNotFoundException, MalformedURLException {
 		ExtentHtmlReporter htmlReporter=new ExtentHtmlReporter(".\\src\\test\\resources\\Report\\Reporthack.html");
 		report=new ExtentReports();
@@ -38,6 +43,13 @@ public class testcase extends POM1 {
 		build.navigateURL();
 	}
 	@Test
+	/*
+	 * To verify the title 
+	 * To select the city name 
+	 * To navigate to the sports page 
+	 * To apply the respective filters for the events to be displayed 
+	 * To get the event details with date in the excel sheet
+	 */
 	public void Testcase1() throws Exception {
 		test=report.createTest("sportsevents","To find the sports activities in your city for coming weekend, with lowest charges on top and to display the Name of the sports along with date");
 		build.verifyPage();
@@ -60,6 +72,11 @@ public class testcase extends POM1 {
 		System.out.println("*******************************************************************************************************");
 	}
 	@Test
+	/*
+	 * To navigate to the movies page 
+	 * To apply the filters in the movies page 
+	 * To get the different movie languages and print in the excel sheet
+	 */
 	public void Testcase2() throws IOException {
 		test=report.createTest("Movielanguages","To extract all the languages for movies and store in a List and to display the same");
 		build3.Eventsclick2();
@@ -74,6 +91,12 @@ public class testcase extends POM1 {
 		System.out.println("*******************************************************************************************************");
 	}
 	@Test
+	/*
+	 * To click the sign in button and also to click the login via google buuton 
+	 * To switch to the google sign in button 
+	 * To give the inappropriate email id and to get the error msg displayed in the 
+	 * excel sheet and also to navigate to the home page
+	 */
 	public void Testcase3() throws Exception {
 		test=report.createTest("SignIn","To check whether the application is displaying error message when tried to sign in via google using invalid account details and also to print the error message");
 		build4.navigatehomepage();
@@ -107,6 +130,7 @@ public class testcase extends POM1 {
 	}
 
 	@AfterTest
+	//To quit all the browsers
 	public void quitBrowser() {
 		build.closeBrowser();
 	}

@@ -26,6 +26,10 @@ public class POM5 extends POM1 {
 		  return Excel.EmailId();
 		}
 
+	/*
+	 * To type the inappropriate email id driven from the excel sheet
+	 * To clickthe next button
+	 */
 	public void SigninDetails()throws Exception {
 		FileInputStream file = new FileInputStream(".\\src\\test\\resources\\objectRepository\\test.properties");
 		try {
@@ -41,21 +45,24 @@ public class POM5 extends POM1 {
 		wait.until(ExpectedConditions.elementToBeClickable((driver.findElement(By.xpath(prop.getProperty("Signinbtn2Xpath"))))));
 		driver.findElement(By.xpath(prop.getProperty("Signinbtn2Xpath"))).click();
 	}
+	//To get the output(error message received when inappropriate email id is given) in the excel sheet	
 	public void SigninErrormsg() throws IOException {
 		XSSFWorkbook workbook=new XSSFWorkbook(); 
-		XSSFSheet sh= workbook.createSheet("Sign in Error msg");
+		XSSFSheet sh= workbook.createSheet("Sign in Error msg1");
 		String errormsg=driver.findElement(By.xpath(prop.getProperty("ErrormsgXpath"))).getText().toString();
 		sh.createRow(0).createCell(0).setCellValue(errormsg);
-		FileOutputStream fout=new FileOutputStream(new File(".//src//test//resources//outputexcel//Sign in.xlsx")); 
+		FileOutputStream fout=new FileOutputStream(new File(".//src//test//resources//outputexcel//Sign in1.xlsx")); 
 		workbook.write(fout); 
 		workbook.close();
 		
 	}
+	//To press escape button from keyboard
 	public void clickEscape() {
 		Actions actions = new Actions(driver);
 		Action sendEsc = actions.sendKeys(Keys.ESCAPE).build();
 		sendEsc.perform();
 	}
+	//To navigate to the home page
 	public void navigatehomepage() {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//*[@id=\"navbar\"]/div[2]/div/div[1]/div/a"))));

@@ -9,10 +9,10 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class Excel {
-	
+//	To get the user data(city name) from the excel sheet
 	public static String[] Cityname() throws IOException {
 	
-	String FilePath = "D://SATHISH.R//hackathon//src//test//resources//hackathon user data.xlsx";
+	String FilePath = ".//src//test//resources//hackathon user data.xlsx";
 	FileInputStream fs = new FileInputStream(FilePath);
 	XSSFWorkbook workbook=new XSSFWorkbook(fs);
 	XSSFSheet sh = workbook.getSheetAt(0);
@@ -29,10 +29,10 @@ public class Excel {
 	return city;
 	}
 
-
+//	To get the user data(Email id) from the excel sheet
 public static String[] EmailId() throws IOException {
 	
-	String FilePath = "D://SATHISH.R//hackathon//src//test//resources//hackathon user data.xlsx";
+	String FilePath = ".//src//test//resources//hackathon user data.xlsx";
 	FileInputStream fs = new FileInputStream(FilePath);
 	XSSFWorkbook workbook=new XSSFWorkbook(fs);
 	XSSFSheet sh = workbook.getSheetAt(0);

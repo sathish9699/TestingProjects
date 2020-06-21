@@ -17,6 +17,7 @@ import org.openqa.selenium.WebElement;
 
 public class POM2 extends POM1 {
 Properties prop = new Properties();
+//To load the properties file and to click the filters button
 public void filteringSearchSports() throws InterruptedException, FileNotFoundException {
 	FileInputStream file = new FileInputStream(".\\src\\test\\resources\\objectRepository\\test.properties");
 	try {
@@ -29,7 +30,7 @@ public void filteringSearchSports() throws InterruptedException, FileNotFoundExc
 		javascript.executeScript("arguments[0].click();",driver.findElement(By.xpath(prop.getProperty("pricedrpdwnXpath"))));
 		javascript.executeScript("arguments[0].click();",driver.findElement(By.xpath(prop.getProperty("priceXpath"))));
 	}
-
+//To get the sports events details with their respective date
 	public String[] eventsDetails() throws IOException {
 		List<WebElement> elements = driver.findElements(By.xpath(prop.getProperty("totaleleXpath")));
 		int j = elements.size();
@@ -41,8 +42,8 @@ public void filteringSearchSports() throws InterruptedException, FileNotFoundExc
 			}
 		return name;
 	}
-	
-	  public void outputdatasports() throws IOException { 
+//To get the output(sports events details with date) in the excel sheet
+	public void outputdatasports() throws IOException { 
 	List<WebElement> elements =driver.findElements(By.xpath(prop.getProperty("totaleleXpath"))); 
 	int k=0;
 	int n=0; 
@@ -51,12 +52,12 @@ public void filteringSearchSports() throws InterruptedException, FileNotFoundExc
 	  city1=eventsDetails();
 	
 	  XSSFWorkbook workbook=new XSSFWorkbook(); 
-	  XSSFSheet sh= workbook.createSheet("Sports details1"); 
+	  XSSFSheet sh= workbook.createSheet("Sports details"); 
 	  for(int h=0;h<j;h++) {
 	  sh.createRow(k).createCell(n).setCellValue(city1[h]);
 	  k++;
 	  } 
-	  FileOutputStream fout=new FileOutputStream(new File(".//src//test//resources//outputexcel//sportsevents1.xlsx")); 
+	  FileOutputStream fout=new FileOutputStream(new File(".//src//test//resources//outputexcel//sportsevents3.xlsx")); 
 	  workbook.write(fout); 
 	 
 	  }

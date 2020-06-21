@@ -18,15 +18,22 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 public class browserlaunch {
 	public static WebDriver driver;
 
+	
+//	To launch the different browsers
+	 	
 	public WebDriver openBrowser(String browsername) throws FileNotFoundException, MalformedURLException {
-
+//	To launch the chrome browser
 		if (browsername.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", ".//src//main//resources//Drivers//chromedriver.exe");
 			driver = new ChromeDriver();
-		} else if (browsername.equals("firefox")) {
+		} 
+//	To launch the firefox browser
+		else if (browsername.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver",".//src//main//resources//Drivers//geckodriver.exe");
 			driver = new FirefoxDriver();
-		} else if (browsername.equals("Microsoft Edge")) {
+		} 
+//	To launch the Microsoft Edge browser
+		else if (browsername.equals("Microsoft Edge")) {
 			System.setProperty("webdriver.edge.driver",".//src//main//resources//Drivers//msedgedriver.exe");
 			driver = new EdgeDriver();
 		}
