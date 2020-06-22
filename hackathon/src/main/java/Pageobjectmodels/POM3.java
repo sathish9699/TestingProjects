@@ -36,7 +36,7 @@ public class POM3 extends POM1  {
 //To get the output(different movie languages) in the excel sheet 
 	public void MovieLanguages() throws IOException {
 		XSSFWorkbook workbook=new XSSFWorkbook(); 
-		XSSFSheet sh= workbook.createSheet("Movie languages1");
+		XSSFSheet sh= workbook.createSheet("Movie languages2");
 		int k=0;
 		int n=0;
 		List<WebElement> elements1 = driver.findElements(By.xpath("//*[@id='cs-lang']/div[2]/ul/li"));

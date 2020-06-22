@@ -52,7 +52,7 @@ public void filteringSearchSports() throws InterruptedException, FileNotFoundExc
 	  city1=eventsDetails();
 	
 	  XSSFWorkbook workbook=new XSSFWorkbook(); 
-	  XSSFSheet sh= workbook.createSheet("Sports details"); 
+	  XSSFSheet sh= workbook.createSheet("Sports details2"); 
 	  for(int h=0;h<j;h++) {
 	  sh.createRow(k).createCell(n).setCellValue(city1[h]);
 	  k++;

@@ -48,7 +48,7 @@ public class POM5 extends POM1 {
 	//To get the output(error message received when inappropriate email id is given) in the excel sheet	
 	public void SigninErrormsg() throws IOException {
 		XSSFWorkbook workbook=new XSSFWorkbook(); 
-		XSSFSheet sh= workbook.createSheet("Sign in Error msg1");
+		XSSFSheet sh= workbook.createSheet("Sign in Error msg2");
 		String errormsg=driver.findElement(By.xpath(prop.getProperty("ErrormsgXpath"))).getText().toString();
 		sh.createRow(0).createCell(0).setCellValue(errormsg);
 		FileOutputStream fout=new FileOutputStream(new File(".//src//test//resources//outputexcel//Sign in1.xlsx")); 

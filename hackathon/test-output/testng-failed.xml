@@ -6,7 +6,7 @@
       <class name="Testcase1.testcase">
         <methods>
           <include name="quitBrowser"/>
-          <include name="Testcase3"/>
+          <include name="Testcase2"/>
           <include name="launchBrowserUrl"/>
         </methods>
       </class> <!-- Testcase1.testcase -->
